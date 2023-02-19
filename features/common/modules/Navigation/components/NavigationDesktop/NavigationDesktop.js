@@ -8,10 +8,11 @@ const NavigationDesktop = () => {
     <Box
       color="blue.600"
       paddingY="2rem"
+      paddingX="1rem"
       backgroundColor="white"
-      display={{ base: "none=", md: "block" }}
+      display={{ base: "none", md: "block" }}
     >
-      <Box maxWidth={"1280px"} margin="0 auto">
+      <Box maxWidth="1280px" margin="0 auto">
         <Flex alignItems="center" justifyContent="space-between">
           <Link href="/">
             <Box display="flex" gap="2" alignItems="center">
@@ -21,9 +22,12 @@ const NavigationDesktop = () => {
               </Text>
             </Box>
           </Link>
-          {navigationLinks.map((item) => {
-            return <NavigationLink key={item.title} {...item} />;
-          })}
+          <Flex gap="12" alignItems="center" fontWeight="medium">
+            {navigationLinks.map((item) => {
+              return <NavigationLink key={item.title} {...item} />;
+            })}
+          </Flex>
+
           <Button
             padding="1.5rem"
             colorScheme="twitter"
