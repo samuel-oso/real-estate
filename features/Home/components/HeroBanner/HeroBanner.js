@@ -28,6 +28,7 @@ const HeroBanner = () => {
           position="absolute"
           color="white"
           fontWeight="light"
+          gap="2"
           left="0"
           right="0"
           bottom="0"
@@ -37,7 +38,7 @@ const HeroBanner = () => {
         >
           <Box width={{ base: "100%", sm: "50%" }}>
             <Text
-              fontSize={{ base: "4xl", sm: "5xl" }}
+              fontSize={{ base: "4xl", lg: "5xl" }}
               lineHeight="shorter"
               marginBottom="1.5rem"
             >

@@ -50,30 +50,34 @@ const HeroForm = () => {
             gap={{ base: "0", sm: "1rem" }}
             flexDirection={{ base: "column", sm: "row" }}
           >
-            <Input
-              marginTop="1.3rem"
-              id="email"
-              type="email"
-              placeholder="Email"
-              {...register("email", { required: "true" })}
-            />
-            {errors.email && (
-              <Text fontSize="xs" color="red.400">
-                {errors.email.type}
-              </Text>
-            )}
-            <Input
-              marginTop="1.3rem"
-              id="phone"
-              type="text"
-              placeholder="Phone"
-              {...register("phone", { required: "true" })}
-            />
-            {errors.phone && (
-              <Text fontSize="xs" color="red.400">
-                {errors.phone.type}
-              </Text>
-            )}
+            <Box>
+              <Input
+                marginTop="1.3rem"
+                id="email"
+                type="email"
+                placeholder="Email"
+                {...register("email", { required: "true" })}
+              />
+              {errors.email && (
+                <Text fontSize="xs" color="red.400">
+                  {errors.email.type}
+                </Text>
+              )}
+            </Box>
+            <Box>
+              <Input
+                marginTop="1.3rem"
+                id="phone"
+                type="text"
+                placeholder="Phone"
+                {...register("phone", { required: "true" })}
+              />
+              {errors.phone && (
+                <Text fontSize="xs" color="red.400">
+                  {errors.phone.type}
+                </Text>
+              )}
+            </Box>
           </Flex>
           <Checkbox
             marginTop="1.3rem"

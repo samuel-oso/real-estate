@@ -6,12 +6,7 @@ import { services, about, ourOffices, workWithUs } from "./footerConsts";
 const Footer = () => {
   return (
     <Box backgroundColor="blue.600">
-      <Box
-        maxWidth="1280px"
-        margin="0 auto"
-        paddingY="3rem"
-        paddingX={{ base: "2rem", sm: "0" }}
-      >
+      <Box maxWidth="1280px" margin="0 auto" paddingY="3rem" paddingX="2rem">
         <SimpleGrid
           columns="4"
           color="whiteAlpha.700"
