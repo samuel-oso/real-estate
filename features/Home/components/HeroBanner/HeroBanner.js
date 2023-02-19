@@ -1,5 +1,5 @@
 import { Box, Fade, Text } from "@chakra-ui/react";
-import React from "react";
+import HeroForm from "../HeroForm";
 
 const HeroBanner = () => {
   return (
@@ -43,8 +43,17 @@ const HeroBanner = () => {
             >
               Download our new <strong>property buying guide</strong> today...
             </Text>
+            <Text fontSize={{ base: "100%", sm: "2xl" }}>
+              A free PDF with our best secrets for evaluating a property
+              purchase, calculating profit and so much more.
+            </Text>
           </Box>
-          <Box width={{ base: "100%", sm: "auto" }}>FORM</Box>
+          <Box
+            width={{ base: "100%", sm: "auto" }}
+            marginTop={{ base: "2rem", sm: "0" }}
+          >
+            <HeroForm />
+          </Box>
         </Box>
       </Box>
     </Fade>
