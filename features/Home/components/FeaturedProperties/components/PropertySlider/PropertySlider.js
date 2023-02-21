@@ -12,7 +12,7 @@ const PropertySlider = ({ featuredProperties }) => {
       slidesPerView={3}
       spaceBetween={10}
       loop={true}
-      loopfillgroupwithblank={true}
+      loopFillGroupWithBlank={true}
       centeredSlides={true}
       autoplay={{ delay: 2000, disableOnInteraction: true }}
       pagination={{ dynamicBullets: true }}
