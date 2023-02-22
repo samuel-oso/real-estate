@@ -1,7 +1,6 @@
 import PropertyCard from "@/features/common/modules/PropertyCard";
 import DefaultLayout from "@/features/Layouts/DefaultLayout";
 import { Box, SimpleGrid } from "@chakra-ui/react";
-import React from "react";
 
 const Properties = ({ properties }) => {
   return (
