@@ -64,7 +64,7 @@ const ContactForm = () => {
           >
             <Text fontSize="0.8rem" color="gray.500">
               I consent to having this website store my details for future
-              communication.
+              communication
             </Text>
           </Checkbox>
         </FormControl>
