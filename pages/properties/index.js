@@ -1,3 +1,4 @@
+import { getProperties } from "@/features/common/api/getProperties";
 import PropertyCard from "@/features/common/modules/PropertyCard";
 import DefaultLayout from "@/features/Layouts/DefaultLayout";
 import { Box, SimpleGrid } from "@chakra-ui/react";
@@ -24,8 +25,8 @@ const Properties = ({ properties }) => {
 export default Properties;
 
 export async function getStaticProps() {
-  const { hits } = require("@/features/data/properties");
+  const properties = await getProperties(20);
   return {
-    props: { properties: hits },
+    props: { properties: properties },
   };
 }
