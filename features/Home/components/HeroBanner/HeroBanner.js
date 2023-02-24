@@ -46,7 +46,7 @@ const HeroBanner = () => {
             </Text>
             <Text fontSize={{ base: "100%", sm: "2xl" }}>
               A free PDF with our best secrets for evaluating a property
-              purchase, calculating profit and so much more..
+              purchase, calculating profit and so much more.
             </Text>
           </Box>
           <Box
