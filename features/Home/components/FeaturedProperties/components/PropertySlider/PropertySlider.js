@@ -10,7 +10,7 @@ import { useIsDesktop } from "@/features/common/Hooks/useIsDesktop";
 const PropertySlider = ({ featuredProperties }) => {
   const { isDesktop } = useIsDesktop();
 
-  return (
+  return featuredProperties.length > 0 ? (
     <Swiper
       slidesPerView={isDesktop ? 3 : 1}
       spaceBetween={10}
@@ -28,7 +28,7 @@ const PropertySlider = ({ featuredProperties }) => {
         </SwiperSlide>
       ))}
     </Swiper>
-  );
+  ) : null;
 };
 
 export default PropertySlider;
