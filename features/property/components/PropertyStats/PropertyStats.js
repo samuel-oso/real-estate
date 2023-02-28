@@ -65,7 +65,7 @@ const PropertyStats = ({ rooms, baths, price, sqSize }) => {
           alignItems="center"
           gap="0.3rem"
         >
-          <Text>PRICE</Text>
+          <Text>PRICE.</Text>
           <Flex alignItems="center" gap="0.5rem">
             {price}
           </Flex>
